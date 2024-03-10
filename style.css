@@ -1,0 +1,16 @@
+
+/* Styles for all devices */
+/* Default layout for all devices (elements side-by-side) */
+.image-container img {
+  display: flex; /* Not necessary, but can be included for consistency */
+  flex: 1; /* Makes elements share available space equally */
+  width: 100%;  /* Adjust width as needed for side-by-side display */
+  margin:2px; /* Add some margin between images */
+}
+
+/* Media query for mobile screens (optional) */
+@media only screen and (max-width: 768px) {
+  .image-container img {
+    width: 190%; /* Display each image full width on mobiles */
+  }
+}
